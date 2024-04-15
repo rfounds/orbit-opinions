@@ -1,8 +1,12 @@
 import Image from 'next/image'
+<<<<<<< HEAD
+=======
+import AttentionGetterImage from '../../public/AttentionGetterDesign.png'
+>>>>>>> 006e8f28242aea9f2edece40ac1e976e3358c77a
 
 export default function Header() {
     return(
-    <div className="relative isolate px-6 pt-16 lg:px-8">
+    <div className="relative isolate pt-16 ">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -15,7 +19,7 @@ export default function Header() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-6xl py-16 sm:py-48 lg:pt-16">
+        <div className="mx-auto max-w-6xl lg:pt-16">
           <div className="text-center">
             <h1 className="text-9xl font-bold tracking-tight text-gray-900 sm:text-9xl">
                 Build your brand <span className="font-bold text-white outline-text">your way</span>
@@ -47,8 +51,15 @@ export default function Header() {
                 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
             }}
           />
-          <img src="./public/AttentionGetterImg.png" alt="Attention Getter Design"/>
         </div>
+        <Image
+            src={AttentionGetterImage}
+            alt="Attention Getter Design"
+            style={{
+            width: '100%',
+            height: 'auto',
+        }}
+        />
     </div>
 )
 }

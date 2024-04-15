@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "min-h-screen bg-background antialiased")}>
-      <div className="align-center">
+      <div className="align-center w-full">
                     < Header />
       </div>
         {children}

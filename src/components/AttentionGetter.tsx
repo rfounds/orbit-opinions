@@ -1,4 +1,4 @@
-import Image from 
+import Image from 'next/image'
 
 export default function Header() {
     return(
@@ -18,7 +18,7 @@ export default function Header() {
         <div className="mx-auto max-w-6xl py-16 sm:py-48 lg:pt-16">
           <div className="text-center">
             <h1 className="text-9xl font-bold tracking-tight text-gray-900 sm:text-9xl">
-                Make your brand <span className="font-bold text-white outline-text">your way</span>
+                Build your brand <span className="font-bold text-white outline-text">your way</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Jumpstart your business with an all-inclusive branding experience
@@ -26,7 +26,7 @@ export default function Header() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>

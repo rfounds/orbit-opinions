@@ -15,10 +15,6 @@ export default function Pricing(){
             <h2 className="text-7xl font-bold tracking-tight text-gray-900 sm:text-7xl text-center pt-44">Pricing</h2>
             <div className="grid grid-cols-3 gap-8 pt-20 px-24">
                 <Card className="flex flex-col justify-between">
-                        <Avatar>
-                            <AvatarImage src="https://github.com/shadcn.png" />
-                            <AvatarFallback>CN</AvatarFallback>
-                        </Avatar>
                     <CardHeader>
                         <CardTitle>Test Card</CardTitle>
                         <CardDescription>test description</CardDescription>

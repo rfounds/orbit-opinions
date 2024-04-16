@@ -6,10 +6,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { CubeTransparentIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Product', href: '/product' },
-  { name: 'Features', href: '/features' },
-  { name: 'Marketplace', href: '/marketplace' },
-  { name: 'About Us', href: '/about' },
+  { name: 'Features', href: '#features' },
+  { name: 'Pricing', href: '#pricing' },
+  { name: 'About Us', href: '#about' },
 ]
 
 export default function Header() {
@@ -22,7 +21,7 @@ export default function Header() {
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-                <CubeTransparentIcon className="h-12 w-12 text-black-500" />
+                <CubeTransparentIcon className="h-12 w-12 text-black-500 hover:text-blue-500" />
             </a>
           </div>
           <div className="flex lg:hidden">

@@ -11,8 +11,8 @@ import {
 export default function Pricing(){ 
     return(
         <>
-            <h2 className="text-7xl font-bold tracking-tight text-gray-900 sm:text-7xl text-center pt-44">Pricing</h2>
-            <div className="grid grid-cols-3 gap-8 pt-20 px-24">
+            <h2 id="pricing" className="text-7xl font-bold tracking-tight text-gray-900 sm:text-7xl text-center pt-20">Pricing</h2>
+            <div className="grid grid-cols-3 gap-8 pt-20 px-44">
                 <Card className="flex flex-col justify-between">
                     <CardHeader>
                         <CardTitle>Test Card</CardTitle>

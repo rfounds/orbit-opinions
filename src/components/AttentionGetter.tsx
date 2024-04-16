@@ -1,8 +1,5 @@
 import Image from 'next/image'
-<<<<<<< HEAD
-=======
 import AttentionGetterImage from '../../public/AttentionGetterDesign.png'
->>>>>>> 006e8f28242aea9f2edece40ac1e976e3358c77a
 
 export default function Header() {
     return(
@@ -34,7 +31,7 @@ export default function Header() {
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+              <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

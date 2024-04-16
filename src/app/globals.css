@@ -79,3 +79,7 @@
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
   }
+
+html{
+    scroll-behavior: smooth!important;
+}

@@ -1,5 +1,18 @@
 "use client"
 
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
+import { Button } from "@/components/ui/button"
+import { SignInButton, SignUpButton, SignOutButton} from '@clerk/nextjs'
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -42,9 +55,27 @@ export default function Header() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500">
+            <a href="/sign-up" className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500">
+              Sign up<span aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="/sign-in" className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
+            <SignOutButton>
+                <AlertDialog>
+                    <AlertDialogTrigger asChild>
+                        <Button variant="outline">Sign Out</Button>
+                    </AlertDialogTrigger>
+                <AlertDialogContent>
+                    <AlertDialogHeader>
+                        <AlertDialogTitle className="text-center">You have been signed out</AlertDialogTitle>
+                    </AlertDialogHeader>
+                    <AlertDialogFooter>
+                        <AlertDialogCancel>Close</AlertDialogCancel>
+                    </AlertDialogFooter>
+                </AlertDialogContent>
+            </AlertDialog>
+            </SignOutButton>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>

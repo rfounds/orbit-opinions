@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import  Header from "@/components/Header";
-import { cn } from '../lib/utils';
+import Header from "@/components/Header";
+import { cn } from "../lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,16 +17,21 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return(
+  return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={cn(inter.className, "min-h-screen bg-background antialiased")}>
-      <div className="align-center w-full">
-                    < Header />
-      </div>
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body
+          className={cn(
+            inter.className,
+            "min-h-screen bg-background antialiased",
+          )}
+        >
+          <div className="align-center w-full">
+            <Header />
+          </div>
+          {children}
+        </body>
+      </html>
     </ClerkProvider>
   );
 }

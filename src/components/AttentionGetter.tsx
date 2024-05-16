@@ -3,7 +3,7 @@ import AttentionGetterImage from "../../public/AttentionGetterDesign.png";
 
 export default function Header() {
   return (
-    <div className="top-80 relative isolate pt-16 ">
+    <div className="pt-80 px-9 relative isolate ">
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"

@@ -14,11 +14,11 @@ export default function Features() {
     <>
       <h2
         id="features"
-        className="text-7xl font-bold tracking-tight text-gray-900 sm:text-7xl text-center "
+        className="text-7xl pt-52 font-bold tracking-tight text-gray-900 sm:text-7xl text-center "
       >
         Features
       </h2>
-      <div className="grid grid-cols-4 gap-8 pt-20 px-44">
+      <div className="relative grid grid-cols-4 gap-8 pt-20 px-44">
         <Card className="flex flex-col justify-between border-2 py-4">
           <CardHeader>
             <CardTitle className="font-extrabold">Website</CardTitle>

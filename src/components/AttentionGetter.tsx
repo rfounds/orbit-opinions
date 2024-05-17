@@ -3,7 +3,7 @@ import AttentionGetterImage from "../../public/AttentionGetterDesign.png";
 
 export default function Header() {
   return (
-    <div className="pt-80 px-9 relative isolate ">
+    <div className="pt-80 flex justify-end px-9 h-screen relative isolate ">
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -16,28 +16,36 @@ export default function Header() {
           }}
         />
       </div>
-      <div className="mx-auto max-w-9xl lg:pt-16">
-        <div className="text-left">
-          <h1 className="text-9xl font-bold tracking-tight text-fBlue underline sm:text-9xl">
+      <div className="flex flex-row mx-auto max-w-9xl lg:pt-16">
+        <div className="text-bottom">
+          <h1 className="drop-shadow-2xl text-9xl font-bold tracking-tight text-fBlue sm:text-9xl">
             Foundwell Services
           </h1>
-          <h1 className="text-6xl mt-6 leading-8 text-gray-600 ">
+          <h1 className="drop-shadow-2xl text-5xl font-light mt-6 leading-8 text-fBlack">
             A clean home is a happy home
           </h1>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-fBlue px-3.5 py-2.5 text-md font-bold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500"
+              className="text-md font-semibold leading-6 text-gray-900 hover:text-fBlue"
             >
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
+        </div>
+        <div className="flex-row">
+          <Image
+            src="/ag1.png"
+            width={500}
+            height={500}
+            alt="picture of cleaning supplies"
+          />
         </div>
       </div>
       <div

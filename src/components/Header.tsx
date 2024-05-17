@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   AlertDialog,
@@ -10,31 +10,34 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
-import { SignInButton, SignUpButton, SignOutButton} from '@clerk/nextjs'
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { CubeTransparentIcon } from '@heroicons/react/24/outline'
+} from "@/components/ui/alert-dialog";
+import { Button } from "@/components/ui/button";
+import { SignInButton, SignUpButton, SignOutButton } from "@clerk/nextjs";
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { CubeTransparentIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Features', href: '#features' },
-  { name: 'Pricing', href: '#pricing' },
-  { name: 'About Us', href: '#about' },
-]
+  { name: "Features", href: "#features" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "About Us", href: "#about" },
+];
 
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav
+          className="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-                <CubeTransparentIcon className="h-12 w-12 text-black-500 hover:text-blue-500" />
+              <CubeTransparentIcon className="h-12 w-12 text-black-500 hover:text-fBlue" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -44,47 +47,67 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon
+                className="h-6 w-6 hover:text-fBlue"
+                aria-hidden="true"
+              />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500">
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-lg font-bold leading-6 text-gray-900 hover:text-fBlue"
+              >
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/sign-up" className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500">
+            <a
+              href="/sign-up"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500"
+            >
               Sign up<span aria-hidden="true">&rarr;</span>
             </a>
-            <a href="/sign-in" className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500">
+            <a
+              href="/sign-in"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-500"
+            >
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
             <SignOutButton>
-                <AlertDialog>
-                    <AlertDialogTrigger asChild>
-                        <Button variant="outline">Sign Out</Button>
-                    </AlertDialogTrigger>
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <Button variant="outline">Sign Out</Button>
+                </AlertDialogTrigger>
                 <AlertDialogContent>
-                    <AlertDialogHeader>
-                        <AlertDialogTitle className="text-center">You have been signed out</AlertDialogTitle>
-                    </AlertDialogHeader>
-                    <AlertDialogFooter>
-                        <AlertDialogCancel>Close</AlertDialogCancel>
-                    </AlertDialogFooter>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle className="text-center">
+                      You have been signed out
+                    </AlertDialogTitle>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Close</AlertDialogCancel>
+                  </AlertDialogFooter>
                 </AlertDialogContent>
-            </AlertDialog>
+              </AlertDialog>
             </SignOutButton>
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          as="div"
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <CubeTransparentIcon className="h-12 w-12 text-black-500" />
+                <CubeTransparentIcon className="h-12 w-12 text-black-500 hover:text-fBlue" />
               </a>
               <button
                 type="button"
@@ -92,7 +115,10 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon
+                  className="h-6 w-6 hover:text-fBlue"
+                  aria-hidden="true"
+                />
               </button>
             </div>
             <div className="mt-6 flow-root">
@@ -102,7 +128,7 @@ export default function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-fBlue"
                     >
                       {item.name}
                     </a>
@@ -111,7 +137,7 @@ export default function Header() {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 hover:text-fBlue"
                   >
                     Log in
                   </a>
@@ -122,5 +148,5 @@ export default function Header() {
         </Dialog>
       </header>
     </div>
-  )
+  );
 }

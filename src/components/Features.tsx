@@ -21,53 +21,55 @@ export default function Features() {
       <div className="relative grid grid-cols-4 gap-8 pt-20 px-44">
         <Card className="flex flex-col justify-between border-2 py-4">
           <CardHeader>
-            <CardTitle className="font-extrabold">Website</CardTitle>
+            <CardTitle className="font-extrabold">
+              General Maintenance
+            </CardTitle>
           </CardHeader>
           <CardContent className="font-normal">
             <ul>
-              <li>&#8226; Responsive design</li>
-              <li>&#8226; Modern styles and techniques</li>
-              <li>&#8226; E-Commerce integration</li>
-              <li>&#8226; Latest SEO standards</li>
+              <li>&#8226; copy about gen maintenance</li>
+              <li>&#8226; copy about gen maintenance</li>
+              <li>&#8226; Rental property...</li>
+              <li>&#8226; copy</li>
             </ul>
           </CardContent>
         </Card>
         <Card className="flex flex-col justify-between border-2 py-4">
           <CardHeader>
-            <CardTitle className="font-extrabold">Logo Design</CardTitle>
+            <CardTitle className="font-extrabold">Project Clean</CardTitle>
           </CardHeader>
           <CardContent>
             <ul>
-              <li>&#8226; Stunning visual identity</li>
-              <li>&#8226; Shipped in various styles</li>
-              <li>&#8226; Targeted to your needs</li>
-              <li>&#8226; Computer generated or hand drawn</li>
+              <li>copy</li>
+              <li>copy</li>
+              <li>copy</li>
+              <li>copy</li>
             </ul>
           </CardContent>
         </Card>
         <Card className="flex flex-col justify-between border-2 py-4">
           <CardHeader>
-            <CardTitle className="font-extrabold">Free Consultation</CardTitle>
+            <CardTitle className="font-extrabold">Move in/Move out</CardTitle>
           </CardHeader>
           <CardContent>
             <ul>
-              <li>&#8226; Assigned your own agent</li>
-              <li>&#8226; Develop a relationship</li>
-              <li>&#8226; Jumpstart your branding strategy</li>
-              <li>&#8226; Learn from seasoned entrepreneurs</li>
+              <li>copy</li>
+              <li>copy</li>
+              <li>copy</li>
+              <li>copy</li>
             </ul>
           </CardContent>
         </Card>
         <Card className="flex flex-col justify-between border-2 py-4">
           <CardHeader>
-            <CardTitle className="font-extrabold">Brand strategy</CardTitle>
+            <CardTitle className="font-extrabold">Deep Clean</CardTitle>
           </CardHeader>
           <CardContent>
             <ul>
-              <li>&#8226; Develop your brand's strategy</li>
-              <li>&#8226; Get guidance from experts</li>
-              <li>&#8226; Build a strong foundation</li>
-              <li>&#8226; Work with financiers</li>
+              <li>With or without Appliances</li>
+              <li>copy</li>
+              <li>copy</li>
+              <li>copy</li>
             </ul>
           </CardContent>
         </Card>

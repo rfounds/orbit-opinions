@@ -5,11 +5,11 @@ import Pricing from "@/components/Pricing";
 import Features from "@/components/Features";
 
 export default function Home() {
-    return (
-        <>
-            <AttentionGetter />
-            <Features />
-            <Pricing />
-        </>
-    );
+  return (
+    <>
+      <AttentionGetter />
+      <Features />
+      <Pricing />
+    </>
+  );
 }
